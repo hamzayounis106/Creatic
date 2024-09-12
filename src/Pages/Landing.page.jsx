@@ -401,7 +401,7 @@ function LandingPage() {
           trigger: ".footer_section",
           start: "top 80%",
           end: "top 40%",
-          markers: true,
+          markers: false,
           scrub: 5,
         },
         y: 150,
