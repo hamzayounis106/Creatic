@@ -28,22 +28,21 @@ function SingleStat({ img, count, text, _id }) {
         },
       }
     );
- 
   }, [count, _id]);
 
   return (
     <div
       id={_id}
-      className="w-[20%] flex    comeUpStat    justify-center items-center flex-col"
+    className="w-[100%] sm:w-[30%] lg:w-[20%] flex flex-col justify-center items-center"
     >
-      <img src={img} alt={text} className="comeUpStat" />
+      <img src={img} alt={text} className="comeUpStat w-[80px] xl:w-[100px]" />
       <h3
         ref={countRef}
-        className="   comeUpStat text-white pb-0 mb-0 mt-4 font-bold leading-none text-[50px]"
+        className="   comeUpStat text-white pb-0 mb-0 mt-4 font-bold leading-none text-[30px] lg:text-[40px] xl:text-[50px]"
       >
         0
       </h3>
-      <p className="    comeUpStat   text-[#6D95FC] text-[18px] m-0 p-0">
+      <p className="    comeUpStat  text-center  text-[#6D95FC] text-[17px] lg:text-[18px] m-0 p-0">
         {text}
       </p>
     </div>

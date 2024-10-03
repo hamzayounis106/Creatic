@@ -3,9 +3,9 @@ import SingleStat from "./Single.Stat";
 function Stats() {
   return (
     <>
-      <section className="relative  flex justify-center bg-black h-[48vh]  items-center  w-full  z-[100]  ">
+      <section className="relative flex-wrap  flex justify-center bg-black lg:py-0 py-10 lg:h-[48vh]  items-center  w-full  z-[100]  ">
         <div className=" bg-gradient-to-r from-[#6d96fc1c] left-0 to-[#6d96fc00]  absolute top-0 z-[200] w-[30%] h-full object-cover"></div>
-        <div className="flex justify-between  w-[80%] z-[300]">
+        <div className="flex gap-y-9 justify-center lg:justify-between flex-wrap  items-center w-[90%] lg:w-[80%] z-[300]">
           <SingleStat
             _id={"team_stat"}
             img="./Stats/Team.svg"

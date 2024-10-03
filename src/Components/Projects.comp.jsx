@@ -32,7 +32,18 @@ export default function Projects() {
         {" "}
         <div className=" bg-gradient-to-r from-[#6d96fc1c] left-0 to-[#6d96fc00]  absolute top-0 z-[50] w-[30%] h-full object-cover"></div>
         <Swiper
-          slidesPerView={3}
+          breakpoints={{
+            500: {
+              slidesPerView: 1,
+            },
+            800: {
+              slidesPerView: 2,
+            },
+            1100:{
+              slidesPerView: 3,
+            }
+          }}
+        
           centeredSlides={true}
           spaceBetween={20}
           pagination={{
@@ -41,7 +52,6 @@ export default function Projects() {
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
-            
           }}
           loop={true}
           modules={[Pagination, Autoplay]}

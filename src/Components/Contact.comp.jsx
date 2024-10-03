@@ -5,9 +5,9 @@ export default function Contact() {
     <>
       <section className=" contact_sections relative  flex justify-center py-24 bg-black   items-center  w-full  z-[100]  ">
         <div className=" bg-gradient-to-l from-[#6d96fc25] right-0 to-[#6d96fc00]  absolute top-0 z-[200] w-[60%] h-full object-cover"></div>
-        <div className="  w-[90%] h-full flex justify-center items-center ">
-          <div className="flex h-full  flex-col items-start justify-center w-[45%] gap-5">
-            <h2 className=" font-bold  text-white text-[40px] uppercase bring_right_contact">
+        <div className=" z-[500]  gap-10 md:gap-0 md:flex-row flex-col w-[90%] h-full flex justify-center items-center ">
+          <div className="flex h-full  flex-col items-start justify-center  w-full md:w-[50%] lg:w-[45%] gap-5">
+            <h2 className=" font-bold  text-white text-[35px]  lg:text-[40px]   uppercase bring_right_contact">
               Get in <span className="text-[#6D95FC]">TOUCH</span>.
             </h2>
             <hr className="border-[#fff] border-2 rounded-lg w-1/5 bring_right_contact" />
@@ -47,14 +47,14 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center   w-[55%] h-full">
-            <div className="w-[65%] contact_form  flex-col rounded-lg flex justify-center items-center  relative  h-[20%]  bg-[#00000094] py-10">
+          <div className="flex items-center justify-center w-full sm:w-[70%] md:w-[50%]   lg:w-[55%] h-full">
+            <div className=" w-[100%] md:w-[80%] lg:w-[65%] contact_form  flex-col rounded-3xl flex justify-center items-center  relative  h-[20%]  bg-[#00000094] py-10">
               <div className="  rounded-3xl z-[300] w-full absolute top-0 bg-gradient-to-b from-[#6d96fc2a] right-0 to-[#6d96fc12] h-full"></div>
               <form
                 action=""
-                className=" z-[300] flex flex-col items-center justify-center w-full gap-6"
+                className=" z-[500] flex flex-col items-center justify-center w-full gap-6"
               >
-                <div className="flex w-[70%] flex-col justify-center items-center gap-3">
+                <div className="flex w-[80%] sm:w-[70%] flex-col justify-center items-center gap-3">
                   <label
                     htmlFor="name"
                     className="uppercase text-white text-[17px] text-start w-full"
@@ -65,10 +65,10 @@ export default function Contact() {
                     type="text"
                     name="name"
                     id="name"
-                    className=" hover:outline-none focus:outline-none w-full bg-transparent border border-white  h-[40px]"
+                    className="  text-white  px-2   hover:outline-none focus:outline-none w-full bg-transparent border border-white  h-[40px]"
                   />
                 </div>
-                <div className="flex w-[70%] flex-col justify-center items-center gap-3">
+                <div className="flex w-[80%] sm:w-[70%] flex-col justify-center items-center gap-3">
                   <label
                     htmlFor="email"
                     className="uppercase text-white text-[17px] text-start w-full"
@@ -79,10 +79,10 @@ export default function Contact() {
                     type="email"
                     name="email"
                     id="email"
-                    className=" hover:outline-none focus:outline-none w-full bg-transparent border border-white  h-[40px]"
+                    className="  text-white  px-2   hover:outline-none focus:outline-none w-full bg-transparent border border-white  h-[40px]"
                   />
                 </div>
-                <div className="flex w-[70%] flex-col justify-center items-center gap-3">
+                <div className="flex w-[80%] sm:w-[70%] flex-col justify-center items-center gap-3">
                   <label
                     htmlFor="message"
                     className="uppercase text-white text-[17px] text-start w-full"
@@ -93,7 +93,7 @@ export default function Contact() {
                     name="message"
                     id="message"
                     rows={5}
-                    className="w-full bg-transparent border border-white hover:outline-none focus:outline-none"
+                    className="w-full px-2 text-white bg-transparent border border-white  hover:outline-none focus:outline-none"
                   ></textarea>
                 </div>
               </form>
